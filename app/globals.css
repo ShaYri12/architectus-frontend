@@ -223,23 +223,17 @@ body {
 
 /* Style for the active slide */
 .swiper-slide-active {
-  opacity: 1; /* Slightly gray out the adjacent slides */
-  filter: grayscale(0) !important; /* Remove grayscale and blur */
-  transform: scale(1); /* Keep the active slide at its normal size */
-  scale: 1;
-  transition: transform 0.3s ease, filter 0.3s ease, scale 0.3s ease,
-    opacity 0.3s ease;
+  opacity: 1 !important;
+  filter: grayscale(0) !important;
+  transform: scale(1) !important;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease !important;
 }
 
 /* Style for the previous and next slides */
 .swiper-slide-prev,
 .swiper-slide-next {
-  opacity: 0.5; /* Slightly gray out the adjacent slides */
-  filter: grayscale(
-    100%
-  ); /* Apply grayscale (black and white) and blur to adjacent slides */
-  transform: scale(0.95); /* Scale down the adjacent slides */
-  scale: 0.95;
-  transition: transform 0.3s ease, filter 0.3s ease, scale 0.3s ease,
-    opacity 0.3s ease;
+  opacity: 0.5 !important;
+  filter: grayscale(100%) !important;
+  transform: scale(0.95) !important;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease !important;
 }
