@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #d9e5ff;
+}
+
+.header {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.64) 0%,
+    rgba(255, 255, 255, 0.64) 100%
+  );
+  backdrop-filter: blur(150px);
+}
+
+.logomenubg {
+  box-shadow: 0px 15px 40px 0px #dedede1a;
+}
+
+.text-gradient {
+  background: linear-gradient(101.84deg, #5c24fc 2.78%, #9d7aff 98.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-gradient {
+  background: linear-gradient(101.84deg, #5c24fc 2.78%, #9d7aff 98.95%);
+}
+
+.windows-bg {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.38),
+      rgba(255, 255, 255, 0.38)
+    ),
+    linear-gradient(0deg, rgba(123, 59, 172, 0.23), rgba(123, 59, 172, 0.23));
+  backdrop-filter: blur(6px);
+  z-index: 99;
+}
+
+.closebtn-bg {
+  background: linear-gradient(101.84deg, #fc2424 2.78%, #ff7a7a 98.95%);
+  box-shadow: 0px 4px 24px 0px #0000000a;
+}
+
+.tabs-scrollbar::-webkit-scrollbar {
+  width: 0;
+}
+
+.footer-blur {
+  backdrop-filter: blur(150px);
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background: #baccfd;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: linear-gradient(101.84deg, #5c24fc 2.78%, #9d7aff 98.95%);
+  width: 50px;
+  height: 15px;
+  border-radius: 30px;
+}
+
+.langmenu {
+  background: linear-gradient(
+    111.61deg,
+    #fff 15.17%,
+    #f9f9f9 55.5%,
+    #fafafa 95.84%
+  );
+  backdrop-filter: blur(13px);
+  box-shadow: 0 0 12px 0 rgba(15, 10, 25, 0.1);
+}
+
+.workoutbg {
+  background-image: url("/assets/workoutbg.webp");
+}
+
+.tab-btn {
+  background: linear-gradient(
+    111.61deg,
+    #fff 15.17%,
+    #f9f9f9 55.5%,
+    #fafafa 95.84%
+  );
+  backdrop-filter: blur(13px);
+  box-shadow: 0 0 12px 0 #0f0a191a;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.download-bg {
+  background: linear-gradient(
+    278.14deg,
+    rgba(253, 241, 255, 0.85) 5.41%,
+    hsla(0, 0%, 97%, 0.85) 50.97%,
+    rgba(236, 235, 255, 0.85) 96.52%
+  );
+}
+
+.shadow-1 {
+  box-shadow: 0px 5px 20px 0px #0f10170f;
+}
+
+.shadow-2 {
+  box-shadow: 0 2px 15px 0 #0f101714;
+}
+
+.contactform-bg {
+  background-image: url("/assets/contactform-bg.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactformshadow {
+  background: linear-gradient(
+    278.14deg,
+    rgba(253, 241, 255, 0.85) 5.41%,
+    rgba(248, 248, 248, 0.85) 50.97%,
+    rgba(236, 235, 255, 0.85) 96.52%
+  );
+}
+
+.shadow-3 {
+  box-shadow: 0px 0px 10px 0px #0000000d;
+  border: 1.5px solid #0f0a191a;
+}
+
+.faq {
+  background: linear-gradient(
+    278.14deg,
+    rgba(253, 241, 255, 0.85) 5.41%,
+    rgba(248, 248, 248, 0.85) 50.97%,
+    rgba(236, 235, 255, 0.85) 96.52%
+  );
+}
+
+.productbox {
+  background: linear-gradient(
+    111.61deg,
+    rgba(255, 255, 255, 0.6) 15.17%,
+    rgba(255, 255, 255, 0.4) 95.84%
+  );
+  backdrop-filter: blur(13px);
+
+  box-shadow: -3px 11px 41px 0px #9f9f9f26;
+}
+
+@media screen and (max-width: 768px) {
+  .mySwiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+
+  .mySwiper .swiper-pagination-bullet-active {
+    width: 36px;
+    height: 12px;
+  }
+}
+
+.formscrollbar::-webkit-scrollbar {
+  width: 0;
+}
+
+.borderUpload {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%233D2278FF' stroke-width='3' stroke-dasharray='6%2c 14' stroke-dashoffset='13' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 12px;
+}
+
+.supplierPayment {
+  background: linear-gradient(
+    278.14deg,
+    rgba(253, 241, 255, 0.85) 5.41%,
+    hsla(0, 0%, 97%, 0.85) 50.97%,
+    rgba(236, 235, 255, 0.85) 96.52%
+  );
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.logobg {
+  backdrop-filter: blur(13px);
+  background: linear-gradient(
+    111.61deg,
+    #ffffff 15.17%,
+    #f9f9f9 55.5%,
+    #fafafa 95.84%
+  );
+
+  box-shadow: 0px 0px 12px 0px #0f0a191a;
+}
+
+/* General style for all slides */
+.swiper-slide {
+  transition: all 0.3s ease; /* Ensure smooth transitions */
+  filter: grayscale(
+    100%
+  ); /* Apply grayscale (black and white) and blur to non-active slides */
+  transform: scale(0.95); /* Scale down non-active slides */
+}
+
+/* Style for the active slide */
+.swiper-slide-active {
+  opacity: 1; /* Slightly gray out the adjacent slides */
+  filter: grayscale(0) !important; /* Remove grayscale and blur */
+  transform: scale(1); /* Keep the active slide at its normal size */
+  scale: 1;
+  transition: transform 0.3s ease, filter 0.3s ease, scale 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* Style for the previous and next slides */
+.swiper-slide-prev,
+.swiper-slide-next {
+  opacity: 0.5; /* Slightly gray out the adjacent slides */
+  filter: grayscale(
+    100%
+  ); /* Apply grayscale (black and white) and blur to adjacent slides */
+  transform: scale(0.95); /* Scale down the adjacent slides */
+  scale: 0.95;
+  transition: transform 0.3s ease, filter 0.3s ease, scale 0.3s ease,
+    opacity 0.3s ease;
+}
